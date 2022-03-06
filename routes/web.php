@@ -35,3 +35,10 @@ Route::post('login', [LoginController::class, 'login'])->name('login');
 Route::get('/', [LoginController::class, 'showLoginForm'])->name('showLoginForm');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/migrate', function () {
+    Artisan::call('migrate') // this will do the command line job
+});
+Route::get('/seed', function () {
+    Artisan::call('db:seed --class=UserSeed') // this will do the command line job
+});
