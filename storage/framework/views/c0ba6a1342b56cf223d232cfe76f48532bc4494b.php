@@ -1,0 +1,1 @@
+<?php /**PATH /home/claudio/repositorios/topdevelopers/resources/views/welcome.blade.php ENDPATH**/ ?>
